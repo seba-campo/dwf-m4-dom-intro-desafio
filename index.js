@@ -25,6 +25,22 @@ const cosasQueAprendimos = [
   },
 ];
 
-function main() {}
+function main() {
+  const lista = document.getElementsByClassName("lista");
+
+  for(let i=0; i<=5; i++){
+    var lastChild = lista[0].lastChild;
+    lista[0].removeChild(lastChild);
+  }
+
+  for(let i = 0; i< cosasQueAprendimos.length; i++){
+    console.log(i)
+  }
+  
+}
+  
+
+
+
 
 main();
