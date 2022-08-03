@@ -34,7 +34,22 @@ function main() {
   }
 
   for(let i = 0; i< cosasQueAprendimos.length; i++){
-    console.log(i)
+    
+    
+    const text = cosasQueAprendimos[i].tema;
+    const clase = cosasQueAprendimos[i].class;
+
+    const newEl = document.createElement('li');
+    newEl.append(text);
+
+    if(clase.length > 0 ){
+      newEl.className = clase;
+    }
+    // console.log(text , " " , clase )
+
+    lista[0].append(newEl)
+
+
   }
   
 }
